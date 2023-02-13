@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./images/day.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    position: relative;
+}
+.container div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(40, 40, 247, 0.5);
+    border-radius: 5px;
+}
+.heading{
+    font-size: 25px;
+    letter-spacing: 5px;
+    padding: 20px 0px;
+}
+.num{
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+#ampm{
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+}
+#ampmText{
+    font-size: 20px;
+    letter-spacing: 2px;
+    bottom: 10px;
+    position: absolute;
+    padding: 5px 7px;
+    background-color: rgb(19, 140, 6);
+    border-radius: 5px;
+}
+.text{
+    text-align: center;
+    background-color: blue;
+    padding: 6px;
+    letter-spacing: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media  only screen and (min-width: 768px) {
+    .container div{
+        margin: 20px;
+    }
+    #ampmText{
+        bottom: 20px;
+        position: absolute;
+    }
+}
